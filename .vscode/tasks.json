@@ -1,0 +1,48 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Start Backend (Workers)",
+      "type": "shell",
+      "command": "npm run start",
+      "options": {
+        "cwd": "${workspaceFolder}/functions"
+      },
+      "presentation": {
+        "group": "dev",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "isBackground": true
+    },
+    {
+      "label": "Start Frontend (Vite)",
+      "type": "shell",
+      "command": "npm run dev",
+      "options": {
+        "cwd": "${workspaceFolder}/frontend"
+      },
+      "presentation": {
+        "group": "dev",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "isBackground": true
+    },
+    {
+      "label": "Start All (Dev Environment)",
+      "dependsOn": [
+        "Start Backend (Workers)",
+        "Start Frontend (Vite)"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      }
+    }
+  ]
+}
