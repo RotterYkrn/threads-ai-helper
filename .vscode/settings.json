@@ -1,13 +1,14 @@
 {
-  "files.associations": {
-    "wrangler.json": "jsonc"
-  },
-  "editor.formatOnSave": true,
-  "editor.formatOnPaste": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "explicit",
-    "source.addMissingImports": "explicit"
-  },
-  "prettier.resolveGlobalModules": false
+    "files.associations": {
+        "wrangler.json": "jsonc"
+    },
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "explicit",
+        "source.addMissingImports": "explicit"
+    },
+    "prettier.resolveGlobalModules": false,
+    "eslint.workingDirectories": [{ "mode": "auto" }]
 }
